@@ -16,7 +16,7 @@ document.getElementById("contactForm")
 
     try{
 
-        const response = await fetch("https://contactform-pe9g.onrender.com",{
+        const response = await fetch("https://contactform-pe9g.onrender.com/api/contact",{
 
             method: "POST",
 
