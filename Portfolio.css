@@ -695,6 +695,102 @@ form button:hover{
 }
 
 /* ========================================= */
+/* STATS SECTION */
+/* ========================================= */
+
+.stats-section{
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 80px 8%;
+
+    background:
+    linear-gradient(
+    rgba(2,6,23,0.96),
+    rgba(2,6,23,0.98)),
+    url('images/grid-bg.png');
+
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+.stats-container{
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 120px;
+
+    flex-wrap: wrap;
+}
+
+.stat-box{
+
+    text-align: center;
+
+    position: relative;
+}
+
+.stat-box h2{
+
+    font-size: 5rem;
+
+    font-weight: 800;
+
+    color: white;
+
+    line-height: 1;
+}
+
+.stat-box h2 span{
+
+    color: #00bfff;
+}
+
+.stat-box p{
+
+    margin-top: 15px;
+
+    font-size: 1rem;
+
+    letter-spacing: 6px;
+
+    color: #64748b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .stats-container{
+
+        gap: 60px;
+    }
+
+    .stat-box h2{
+
+        font-size: 3.5rem;
+    }
+
+    .stat-box p{
+
+        font-size: 0.8rem;
+
+        letter-spacing: 4px;
+    }
+}
+
+/* ========================================= */
 /* FOOTER */
 /* ========================================= */
 
@@ -825,3 +921,82 @@ footer{
         padding:80px 20px;
     }
 }
+
+
+
+/* MOBILE TECH GRID FIX */
+
+@media(max-width:768px){
+
+    .icon-grid{
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .icon-item{
+
+        padding: 25px 15px ;
+    }
+
+    .icon-item img{
+
+        width: 55px;
+    }
+
+    .icon-item p{
+
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================= */
+/* TECH TAG BUTTONS */
+/* ========================================= */
+
+
+
+/* COLORS */
+.project-tags{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+
+    padding: 0 20px;   /* align with content */
+    margin: 15px 15px;  /* space from description */
+}
+
+/* TAG BUTTON */
+.tag{
+    padding:8px 16px;
+    border-radius:10px;
+    font-size:0.9rem;
+    font-weight:600;
+    color:white;
+}
+
+.blue{
+    background:#2563eb;
+}
+
+.green{
+    background:#16a34a;
+}
+
+.purple{
+    background:#7c3aed;
+}
+
+.orange{
+    background:#ea580c;
+}
+
+.red{
+    background:#dc2626;
+}
+
+.sky{
+    background:#0284c7;
+}
+
